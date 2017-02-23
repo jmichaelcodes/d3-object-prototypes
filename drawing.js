@@ -26,6 +26,7 @@ function growBoxes () {
         if (e.target.nodeName === 'DIV') {
             e.target.style.width= '20px';
             e.target.style.height = '20px';
+            e.target.className = 'rotate';
         } 
     }) 
 }
