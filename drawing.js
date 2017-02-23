@@ -7,15 +7,15 @@ function enableDrawing() {
         var green = Math.round(Math.random() * 255);
         var blue = Math.round(Math.random() * 255);
         // console.log(red, green, blue);
-        var rgb = 'rgb(' + red + ', ' + green + ', ' + blue + ')'
-        var rgbConcat = `rgb(${red}, ${green}, ${blue})`
+        var rgbConcat = 'rgb(' + red + ', ' + green + ', ' + blue + ')'
+        var rgbTemplate = `rgb(${red}, ${green}, ${blue})`
         var box = document.createElement('div');
         box.style.position = 'absolute';
         box.style.top = e.pageY + 'px';
         box.style.left = e.pageX + 'px';
         box.style.width = '10px';
         box.style.height = '10px';
-        box.style.backgroundColor = rgbConcat;
+        box.style.backgroundColor = rgbTemplate;
 
         document.body.appendChild(box);
     });
